@@ -1,0 +1,19 @@
+{
+  "name": "swag/replace-header",
+  "description": "Theme to replace Header",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.1",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ReplaceHeader\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "ReplaceHeader\\ReplaceHeader",
+    "label": {
+      "de-DE": "Theme ReplaceHeader plugin",
+      "en-GB": "Theme ReplaceHeader plugin"
+    }
+  }
+}
