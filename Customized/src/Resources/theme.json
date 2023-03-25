@@ -13,10 +13,37 @@
   ],
   "script": [
     "@Storefront",
-    "app/storefront/dist/storefront/js/customized.js"
+    "app/storefront/dist/storefront/js/customized.js",
+    "app/storefront/src/main.js"
   ],
   "asset": [
     "@Storefront",
     "app/storefront/src/assets"
-  ]
+  ],
+  "config": {
+    "fields": {
+      "sw-color-brand-primary": {
+        "label": {
+          "en-GB": "Primary colour",
+          "de-DE": "Primärfarbe"
+        },
+        "type": "color",
+        "value": "#008490",
+        "editable": true,
+        "block": "themeColors",
+        "order": 100
+      },
+      "sw-color-brand-adding": {
+        "label": {
+          "en-GB": "Adding colour",
+          "de-DE": "Zufügen Farbe"
+        },
+        "type": "color",
+        "value": "#595959",
+        "editable": true,
+        "block": "themeColors",
+        "order": 100
+      }
+    }
+  }
 }
