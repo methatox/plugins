@@ -1,0 +1,25 @@
+{% block member_table %}
+    <member-table
+        class="member-table-container">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Bild</th>
+                  </tr>
+            </thead>
+            {% block member_table_body %}
+            <tbody>
+                {% for member in members %}
+                    <member-row
+                    :member="member"
+                    >
+                {% endfor %}
+            </tbody>
+            {% endblock %}
+        </table>
+
+        </member-table>
+{% endblock %}
