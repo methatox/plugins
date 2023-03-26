@@ -1,28 +1,43 @@
-import './page/members';
-
+import './page/member-create';
+import './page/member-list';
+import './view/member-base';
 
 const { Module } = Shopware;
 Module.register('team-member', {
-    type: 'plugin',
+    type: 'core',
     name: 'Team Members',
-    title: 'Custom Team Members',
+    title: 'team-member.general.list',
     description: 'Add Members',
     color: '#824bb3',
     icon: 'regular-users',
     routes: {
-        teammembers: {
-            component: 'team-member-list',
-            path: 'members'
+        index: {
+            path: 'overview',
+            component: 'member-base'
+        },
+        list: {
+            components: "member-list",
+            path: 'list'
         }
     },
     // },
     navigation: [{
         id: 'derichs-team-members',
-        label: 'Teammember',
+        label: 'team-member.general.members',
         color: '#824bb3',
-        path: 'members',
-        icon: 'default-shopping-paper-bag-product',
-        parent: 'sw-my-apps',
-        position: 50
-    }]
+        icon: 'regular-users',
+        position: 100
+    },{
+        path: 'team.member.index',
+        label: 'team-member.general.memberList',
+        color: '#F88962',
+        parent: 'derichs-team-members'
+    }
+    // ,{
+    //     path: 'team.member.list',
+    //     label: 'team-member.general.memberList',
+    //     color: '#F88962',
+    //     parent: 'derichs-team-members'
+    // }
+    ]
 });

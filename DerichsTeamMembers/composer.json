@@ -1,7 +1,7 @@
 {
   "name": "derichs/team-members",
   "description": "Plugin to show team members",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "authors": [
@@ -10,7 +10,9 @@
     }
   ],
   "require": {
-    "shopware/core": "6.4.*"
+    "shopware/core": "6.4.*",
+    "shopware/administration": "*",
+    "shopware/storefront": "*"
   },
   "autoload": {
     "psr-4": {

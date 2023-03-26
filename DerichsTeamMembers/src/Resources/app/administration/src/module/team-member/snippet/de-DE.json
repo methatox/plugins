@@ -1,0 +1,13 @@
+{
+  "team-member": {
+    "general": {
+      "members": "Teammitglieder",
+      "memberList": "Liste",
+      "mainMenuItemAdd": "Kunden anlegen",
+      "descriptionTextModule": "Verwaltung von Kunden.",
+      "placeholderSearchBar": "Durchsuche alle Kunden ...",
+      "newCustomer": "Neuer Kunde",
+      "tooltipLanguageSwitch": "Die Sprachauswahl ist deaktiviert, da keine übersetzbaren Felder existieren."
+    }
+  }
+}
