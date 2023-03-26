@@ -1,0 +1,31 @@
+{
+  "name": "derichs/team-members",
+  "description": "Plugin to show team members",
+  "version": "1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "André Derichs"
+    }
+  ],
+  "require": {
+    "shopware/core": "6.4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "DerichsTeamMembers\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "DerichsTeamMembers\\DerichsTeamMembers",
+    "label": {
+      "de-DE": "Teammitglieder",
+      "en-GB": "Team members"
+    },
+    "description": {
+      "de-DE": "Plugin um die Teammitglieder darzustellen",
+      "en-GB": "Plugin to show the Teammembers"
+  }
+  }
+}
