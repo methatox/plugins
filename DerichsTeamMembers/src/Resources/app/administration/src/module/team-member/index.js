@@ -1,6 +1,8 @@
 import './page/member-create';
 import './page/member-list';
 import './view/member-base';
+import './component/member-table';
+import './component/member-row';
 
 const { Module } = Shopware;
 Module.register('team-member', {
