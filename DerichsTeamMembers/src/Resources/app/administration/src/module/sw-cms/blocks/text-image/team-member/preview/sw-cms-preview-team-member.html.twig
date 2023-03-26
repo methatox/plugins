@@ -1,0 +1,19 @@
+<!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+{% block sw_cms_block_team_member_preview %}
+<div class="sw-cms-preview-team-member">
+    <div class="sw-cms-preview-image">
+    <img
+        :src="'/administration/static/img/cms/preview_mountain_small.jpg' | asset"
+        alt=""
+    >
+    </div>
+    <div class="sw-cms-preview-text">
+    <div class="sw-cms-preview-text-name">
+        <p>Name:</p><p>Lorem ipsum dolor</p>
+    </div>
+    <div class="sw-cms-preview-text-position">
+        <p>Position:</p><p>Lorem ipsum dolor</p>
+    </div>
+    </div>
+</div>
+{% endblock %}

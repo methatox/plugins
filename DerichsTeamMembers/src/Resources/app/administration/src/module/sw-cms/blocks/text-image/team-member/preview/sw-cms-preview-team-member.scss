@@ -1,0 +1,21 @@
+.sw-cms-preview-team-member {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 15px;
+    .sw-cms-preview-image {
+        display: block;
+        img{
+            border-radius: 20px;
+        }
+    }
+    .sw-cms-preview-text {
+        display: grid;
+        .sw-cms-preview-text-name{
+            display: flex;
+        }
+        .sw-cms-preview-text-position{
+            display: flex;
+        }
+    }
+}
